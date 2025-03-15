@@ -4,29 +4,30 @@ export default function Navbar() {
 
     return (
         <>
-          <div className="flex bg-black p-6 items-center justify-center">
-            <h2 className="text-3xl text-red-500 font-serif ">Ighorjivco</h2>
+          <div className="flex bg-[#DFD0B8] p-4 lg:fixed w-full">
+            <h2 className="text-2xl text-[#948979] font-serif mr-[34%] ">Imova</h2>
     
             {/* Navigation links */}
-            <nav className="hidden lg:flex items-center gap-x-9 ml-[43%]">
-            <Link href="/" className="font-mono text-red-500 hover:text-gray-300 text-xl">Home</Link>
-            <Link href="/despremine" className="font-mono text-red-500 hover:text-gray-300 text-xl">Despre</Link>
-            <Link href="/servicii" className="font-mono text-red-500 hover:text-gray-300 text-xl">Servicii</Link>
-              <Link href="/ebook" className="font-mono text-red-500 hover:text-gray-300 text-xl">Ebook</Link>
+            <nav className="hidden lg:gap-x-9 lg:flex lg:justify-center lg:items-center">
+            <Link href="/" className="font-mono text-[#948979] hover:text-[#795458] text-l">Home</Link>
+            <Link href="/despremine" className="font-mono text-[#948979] hover:text-[#795458] text-l">About</Link>
+            <Link href="/servicii" className="font-mono text-[#948979] hover:text-[#795458] text-l">Services</Link>
+              <Link href="/ebook" className="font-mono text-[#948979] hover:text-[#795458] text-l">Contact</Link>
             </nav>
+            <button className="hidden lg:block p-1 rounded text-[#948979] ml-auto cursor-pointer">Log in</button>
     
             {/* Mobile menu button */}
-            <div className="lg:hidden ml-[45%]">
-              <button className="text-white" onClick={() => toggleMenu()}>☰</button>
+            <div className="lg:hidden ml-[40%]">
+              <button className="text-black " onClick={() => toggleMenu()}>☰</button>
             </div>
           </div>
     
           {/* Mobile menu */}
           <div id="mobile-menu" className="hidden lg:hidden bg-black p-6 ">
-          <Link href="/" className="block font-mono text-white hover:text-gray-300 ml-[6%] text-xl mb-2 ">Home</Link> 
-          <Link href="/despremine" className="block font-mono text-white hover:text-gray-300 ml-[6%] text-xl mb-2 ">Despre</Link> 
-            <Link href="/muzica" className="block font-mono text-white hover:text-gray-300 ml-[6%] text-xl mb-2">Servicii</Link>
-            <Link href="/contact" className="block font-mono text-white hover:text-gray-300 ml-[6%] text-xl mb-2">Ebook</Link> 
+          <Link href="/" className="block font-mono text-white hover:text-gray-300  text-xl mb-2 ">Home</Link> 
+          <Link href="/despremine" className="block font-mono text-white hover:text-gray-300  text-xl mb-2 ">Despre</Link> 
+            <Link href="/muzica" className="block font-mono text-white hover:text-gray-300 text-xl mb-2">Servicii</Link>
+            <Link href="/contact" className="block font-mono text-white hover:text-gray-300 text-xl mb-2">Contact</Link> 
           </div>
         </>
       );
