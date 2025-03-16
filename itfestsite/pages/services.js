@@ -71,7 +71,7 @@ export default function Services() {
                                 📍 Localizare: {apartment.locatie}
                             </p>
                             <p className="text-l font-mono flex items-center mb-3">
-                                📏 Suprafață: {apartment.metripatrati} m²
+                                📏 Suprafață: {apartment.metripatrati} 
                             </p>
                             <p className="text-l font-mono flex items-center mb-3">
                                 🏠 Nr. Camere: {apartment.nrcamere}
