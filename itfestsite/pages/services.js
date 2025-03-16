@@ -29,14 +29,14 @@ export default function Services() {
 
     return (
         <>
-            <nav className='flex justify-center items-center bg-red-700 gap-x-[10%]'>
+            <nav className='flex justify-center items-center bg-gray-900 text-[#ffffff] lg:gap-x-[10%] gap-x-[30%]'>
                 <div className="relative">
                     <button className="p-2 rounded text-[#948979] cursor-pointer" onClick={toggleDropdown}>Oras</button>
                     {dropdownOpen && (
                         <div className="absolute mt-1 w-35 bg-blue-500 rounded-md shadow-lg z-10">
                             <ul className="py-1">
                                 {cities.map((city, index) => (
-                                    <li key={index} className="px-4 py-2 text-gray-700 cursor-pointer" onClick={() => setSelectedCity(city)}>
+                                    <li key={index} className="px-2 py-2 text-gray-700 cursor-pointer" onClick={() => setSelectedCity(city)}>
                                         {city}
                                     </li>
                                 ))}
@@ -48,7 +48,7 @@ export default function Services() {
                 <div className="relative">
                     <button className="p-2 rounded text-[#948979] cursor-pointer" onClick={toggleAltdropdown}>Pret</button>
                     {altdropdownOpen && (
-                        <div className="absolute mt-1 w-35 bg-amber-950 rounded-md shadow-lg z-10">
+                        <div className="absolute  w-35 bg-amber-950  shadow-lg z-10">
                             <ul className="py-1">
                                 {pret.map((price, index) => (
                                     <li key={index} className="px-4 py-2 text-gray-700 cursor-pointer" onClick={() => setSelectedPrice(price)}>

@@ -40,7 +40,7 @@ export default function Detalii() {
 <div className='flex flex-row gap-x-5'>
   <img className='w-[25%]' src={apartment.selfie} alt="selfie" />
   <div className="flex flex-col justify-center">
-    <p className='text-2xl'>{apartment.nume}</p>
+    <p className='text-2xl text-red-500'>{apartment.nume}</p>
     <button className='rounded-full w-44 text-xl p-2 bg-red-500 mt-9'>Contact me</button>
   </div>
 </div>
