@@ -30,11 +30,11 @@ export default function Services() {
 
     return (
         <>
-          <nav className="flex justify-center items-center bg-gray-900 text-[#ffffff] gap-x-40 py-1">
+          <nav className="flex justify-center items-center bg-blue-950 text-[#ffffff] gap-x-40 py-1">
   <div className="relative  left-6">
-    <button className="p-2 rounded text-[#948979] cursor-pointer" onClick={toggleDropdown}>Oras</button>
+    <button className="p-2 rounded text-[#948979] cursor-pointer font-bold" onClick={toggleDropdown}>City</button>
     {dropdownOpen && (
-      <div className="absolute left-1/2 -translate-x-1/2 w-40 bg-blue-500 shadow-lg z-10">
+      <div className="absolute left-1/2 -translate-x-1/2 w-40 bg-gray-300 rounded-2xl shadow-lg z-10">
         <ul className="py-1 flex flex-col justify-center items-center" onClick={toggleDropdown}>
           {cities.map((city, index) => (
             <li key={index} id="mobile-menu" className="px-2 py-2 text-gray-700 cursor-pointer" onClick={() => setSelectedCity(city)}>
@@ -47,9 +47,9 @@ export default function Services() {
   </div>
 
   <div className="relative">
-    <button className="p-2 rounded text-[#948979] cursor-pointer" onClick={toggleAltdropdown}>Pret</button>
+    <button className="p-2 rounded text-[#948979] cursor-pointer font-bold" onClick={toggleAltdropdown}>Price</button>
     {altdropdownOpen && (
-      <div className="absolute left-1/2 -translate-x-1/2 w-40 bg-amber-950 shadow-lg z-10">
+      <div className="absolute left-1/2 -translate-x-1/2 w-40 bg-gray-300  rounded-2xl  shadow-lg z-10">
         <ul className="py-1 flex flex-col justify-center items-center" onClick={toggleAltdropdown}>
           {pret.map((price, index) => (
             <li key={index} className="px-4 py-2 text-gray-700 cursor-pointer" onClick={() => setSelectedPrice(price)}>
@@ -70,16 +70,16 @@ export default function Services() {
                             <img src={apartment.img} className='h-64 w-80 mb-2' />
 
                             <p className="text-l font-light mt-4 flex items-center mb-3">
-                                📍 Localizare: {apartment.locatie}
+                                📍 Location: {apartment.locatie}
                             </p>
                             <p className="text-l font-mono flex items-center mb-3">
-                                📏 Suprafață: {apartment.metripatrati} 
+                                📏 Area: {apartment.metripatrati} 
                             </p>
                             <p className="text-l font-mono flex items-center mb-3">
-                                🏠 Nr. Camere: {apartment.nrcamere}
+                                🏠 No. rooms: {apartment.nrcamere}
                             </p>
                             <p className="text-l font-mono flex items-center">
-                                🏢 Etaj: {apartment.etaj}
+                                🏢 Story: {apartment.etaj}
                             </p>
                         </div>
                     </Link>

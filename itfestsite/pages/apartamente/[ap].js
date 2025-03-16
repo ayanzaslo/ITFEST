@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import apartments from './detalii'; // Asigură-te că calea este corectă
+import Link from 'next/link';
 
 export default function Detalii() {
     const router = useRouter();
@@ -64,7 +65,7 @@ export default function Detalii() {
             <button className='bg-red-700 p-2 rounded text-white cursor-pointer'>Luxury</button>
             </div>
             <div className='border-t border-b border-gray-300 p-4 mt-6'>
-                <p className='mb-2 text-xl'>Pret de vanzare:</p>
+                <p className='mb-2 text-xl'>Selling price:</p>
                 <p className='text-4xl'>{apartment.pret}</p>
             </div>
             <div className='mb-4 mt-4'>
@@ -81,7 +82,7 @@ export default function Detalii() {
   <img className='w-[25%]' src={apartment.selfie} alt="selfie" />
   <div className="flex flex-col justify-center">
     <p className='text-3xl text-red-500'>{apartment.nume}</p>
-    <button className='rounded-full w-44 text-xl p-2 bg-red-500 mt-5 hover:scale-105 cursor-pointer'>Contact me</button>
+  <Link className='rounded-full w-44 text-xl p-2 bg-red-500 mt-5 hover:scale-105 cursor-pointer text-center' href="https://web.whatsapp.com/">Contact me</Link>
   </div>
 
   
