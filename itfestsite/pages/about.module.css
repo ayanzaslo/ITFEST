@@ -1,53 +1,62 @@
-/* styles/About.module.css */
+/* styles/about.module.css */
 
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .hero {
-    text-align: center;
-    background-color: #f0f0f0;
-    padding: 50px 20px;
-    border-radius: 10px;
-    margin-bottom: 30px;
-  }
-  
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .subtitle {
-    font-size: 1.2rem;
-    color: #666;
-  }
-  
-  .content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .heading {
-    font-size: 2rem;
-    color: #333;
-    margin-top: 20px;
-  }
-  
-  .features {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .features li {
-    margin: 10px 0;
-    font-size: 1.1rem;
-    color: #555;
-  }
-  
-  .features li strong {
-    color: #0070f3;
-  }
-  
+  position: relative;
+  z-index: 1; 
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px; 
+  margin: 0 auto;
+  background-color: rgba(20, 20, 20, 0.788);
+  opacity:50%;
+  border-radius: 10px; 
+  color: white;
+  height:100vh;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 80px; 
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.788);
+}
+
+.title {
+  font-size: 5rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px; 
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-top: 20px;
+  color: white;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.features li strong {
+  color: #68513b;
+}
